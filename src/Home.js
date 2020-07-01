@@ -6,7 +6,9 @@ class Home extends Component {
     render() { 
         return (  <div>
                     <AppNav/>
-                    Willkommen!
+                    <h2 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
+                        Welcome to the Frontend of Open API Reporting!
+                    </h2>
                 </div> );
     }
 }
