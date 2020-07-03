@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AppNav from './AppNav';
 import { Container, Table } from 'reactstrap';
+import AppNav from './AppNav';
 
 class LetterOfCredit extends Component {
     state = { 
@@ -9,7 +9,7 @@ class LetterOfCredit extends Component {
      }
 
      async componentDidMount(){
-         const response = await fetch('/allLcs');
+         const response = await fetch('/demo/allLcs');
          const body = await response.json();
          this.setState({LettersOfCredit: body, isLoading: false});
      }

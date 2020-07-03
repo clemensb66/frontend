@@ -7,7 +7,7 @@ class App extends Component {
   state = {  }
   render() { 
     return ( 
-      <Router>
+    <Router /*basename={window.location.pathname || ''}*/>
         <Switch>
           <Route path='/' exact={true} component={Home}/>
           <Route path='/home' exact={true} component={Home}/>
